@@ -1,8 +1,21 @@
 # M365 PowerShell Toolkit
 
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/v/ABK.M365Toolkit?label=PowerShell%20Gallery)](https://www.powershellgallery.com/packages/ABK.M365Toolkit) [![Downloads](https://img.shields.io/powershellgallery/dt/ABK.M365Toolkit)](https://www.powershellgallery.com/packages/ABK.M365Toolkit)
+
 PowerShell scripts for Microsoft 365 administration by Anthony Buhnerkemper.
 
 A small, practical collection of read-only reporting scripts built on the Microsoft Graph PowerShell SDK and Exchange Online PowerShell. Each script uses least-privilege scopes, includes comment-based help, and exports results to CSV.
+
+
+## Install from PowerShell Gallery
+
+```powershell
+Install-Module ABK.M365Toolkit -Scope CurrentUser
+Import-Module ABK.M365Toolkit
+Get-Command -Module ABK.M365Toolkit
+```
+
+Each script is also exported as a function with the same name and parameters (e.g. `Get-Help <FunctionName> -Full`). Prerequisite modules (Microsoft Graph, ExchangeOnlineManagement, ConfigMgr console, Citrix SDK, etc.) are not auto-installed; install the ones the functions you use need, as described below. The module source lives in [`ABK.M365Toolkit/`](ABK.M365Toolkit/).
 
 ## Scripts
 
